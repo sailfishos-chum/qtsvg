@@ -43,7 +43,7 @@ Requires: %{name}%{?_isa} = %{version}-%{release}
 %build
 %{opt_qmake_qt5}
 
-%make_build
+make -j1
 
 
 %install
