@@ -41,9 +41,12 @@ Requires: %{name}%{?_isa} = %{version}-%{release}
 
 
 %build
+export QTDIR=%{_opt_qt5_prefix}
+touch .git
+
 %{opt_qmake_qt5}
 
-make -j1
+%make_build
 
 
 %install
