@@ -29,13 +29,6 @@ Requires: opt-qt5-qtbase-devel%{?_isa}
 %description devel
 %{summary}.
 
-%package examples
-Summary: Programming examples for %{name}
-Requires: %{name}%{?_isa} = %{version}-%{release}
-%description examples
-%{summary}.
-
-
 %prep
 %autosetup -n %{name}-%{version}/upstream
 
@@ -84,5 +77,3 @@ popd
 %{_opt_qt5_libdir}/pkgconfig/Qt5Svg.pc
 %{_opt_qt5_archdatadir}/mkspecs/modules/qt_lib_svg*.pri
 
-%files examples
-%{_opt_qt5_examplesdir}/
