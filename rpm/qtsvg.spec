@@ -1,5 +1,7 @@
 %global qt_version 5.15.8
 
+%{?opt_qt5_default_filter}
+
 Summary: Qt5 - Support for rendering and displaying SVG
 Name: opt-qt5-qtsvg
 Version: 5.15.8
@@ -15,7 +17,9 @@ BuildRequires: opt-qt5-qtbase-devel >= %{qt_version}
 BuildRequires: pkgconfig(zlib)
 
 BuildRequires: opt-qt5-qtbase-private-devel
+
 %{?_opt_qt5:Requires: %{_opt_qt5}%{?_isa} = %{_opt_qt5_version}}
+Requires: opt-qt5-qtbase-gui >= %{qt_version}
 
 %description
 Scalable Vector Graphics (SVG) is an XML-based language for describing
