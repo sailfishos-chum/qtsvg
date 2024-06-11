@@ -1,10 +1,10 @@
-%global qt_version 5.15.10
+%global qt_version 5.15.14
 
 %{?opt_qt5_default_filter}
 
 Summary: Qt5 - Support for rendering and displaying SVG
 Name: opt-qt5-qtsvg
-Version: 5.15.10+kde8
+Version: 5.15.14+kde5
 Release: 1%{?dist}
 
 # See LGPL_EXCEPTIONS.txt, LICENSE.GPL3, respectively, for exception details
